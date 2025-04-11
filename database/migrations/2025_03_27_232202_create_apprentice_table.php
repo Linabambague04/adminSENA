@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('apprentices', function (Blueprint $table) {
+        Schema::create('apprentice', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('email');
@@ -19,13 +19,13 @@ return new class extends Migration
             $table->unsignedBigInteger('course_id');
             $table->foreign('course_id')
                 ->references('id')
-                ->on('courses')
+                ->on('course')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
             $table->unsignedBigInteger('computer_id')->unique(); 
             $table->foreign('computer_id')
                 ->references('id')
-                ->on('computers')
+                ->on('computer')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
             $table->timestamps();
@@ -37,6 +37,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('apprentices');
+        Schema::dropIfExists('apprentice');
     }
 };

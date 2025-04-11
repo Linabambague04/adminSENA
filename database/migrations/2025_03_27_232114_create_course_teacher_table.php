@@ -16,13 +16,13 @@ return new class extends Migration
             $table->unsignedBigInteger('course_id');
             $table->foreign('course_id')
                 ->references('id')
-                ->on('courses')
+                ->on('course')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
             $table->unsignedBigInteger('teacher_id');
             $table->foreign('teacher_id')
                 ->references('id')
-                ->on('teachers')
+                ->on('teacher')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
             $table->timestamps();
