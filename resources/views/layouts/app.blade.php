@@ -44,6 +44,12 @@
         th {
             background-color: #ddd;
         }
+        a {
+            text-decoration: none;
+            border: none;
+            display: inline-block;
+            vertical-align: middle; 
+        }
     </style>
 </head>
 <body>
