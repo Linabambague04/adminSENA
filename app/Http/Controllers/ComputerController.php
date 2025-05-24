@@ -8,6 +8,7 @@ use App\Models\Computer;
 class ComputerController extends Controller
 {
     public function index()
+<<<<<<< HEAD
     {
         $computers = Computer::all();
         return view('computer.index', compact('computers'));
@@ -51,4 +52,10 @@ class ComputerController extends Controller
         $computer->delete();
         return redirect()->route('computer.index');
     }
+=======
+{
+    $computers = Computer::all();
+    return view('computer.index', compact('computers'));
+}
+>>>>>>> b57ecaf2df31ed2a79b7baff05309c07e7fe3db4
 }

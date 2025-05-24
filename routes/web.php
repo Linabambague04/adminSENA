@@ -23,6 +23,7 @@ Route::get('area', [AreaController::class, 'index']);
 Route::get('computer', [ComputerController::class, 'index']);
 Route::get('training_center', [TrainingCenterController::class, 'index']);
 Route::get('course_teacher', [CourseTeacherController::class, 'index']);
+<<<<<<< HEAD
 
 Route::get('computer', [ComputerController::class, 'index'])->name('computer.index');
 Route::get('computer/create', [ComputerController::class, 'create'])->name('computer.create');
@@ -34,3 +35,5 @@ Route::delete('computer/{computer}', [ComputerController::class, 'destroy'])->na
 
 
 
+=======
+>>>>>>> b57ecaf2df31ed2a79b7baff05309c07e7fe3db4

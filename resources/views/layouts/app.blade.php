@@ -44,12 +44,15 @@
         th {
             background-color: #ddd;
         }
+<<<<<<< HEAD
         a {
             text-decoration: none;
             border: none;
             display: inline-block;
             vertical-align: middle; 
         }
+=======
+>>>>>>> b57ecaf2df31ed2a79b7baff05309c07e7fe3db4
     </style>
 </head>
 <body>
