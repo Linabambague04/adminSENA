@@ -3,7 +3,6 @@
 @section('title', 'Computadores')
 
 @section('content')
-<<<<<<< HEAD
     <h2 style="margin-top: 20px;">Lista de Computadores</h2>
 
     <a href="{{ route('computer.create') }}">
@@ -51,26 +50,4 @@
             @endforeach
         </tbody>
     </table>
-=======
-<h2>Lista de Computadores</h2>
-
-<table>
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Número</th>
-            <th>Marca</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach ($computers as $computer)
-            <tr>
-                <td>{{ $computer->id }}</td>
-                <td>{{ $computer->number }}</td>
-                <td>{{ $computer->brand }}</td>
-            </tr>
-        @endforeach
-    </tbody>
-</table>
->>>>>>> b57ecaf2df31ed2a79b7baff05309c07e7fe3db4
 @endsection
