@@ -10,13 +10,13 @@ class Apprentice extends Model
 
     protected $fillable = ['name'];
     protected $allowIncluded = [
-        'course', 
-        'computer', 
-        'course.training_center', 
-        'course.training_center.teachers',
+        'course',
+        'computer',
         'course.area',
         'course.area.teachers',
-        'course.teacher'
+        'course.teachers',
+        'course.trainingCenter',
+        'course.trainingCenter.teachers'
     ];
     protected $allowFilter = [
         'id', 

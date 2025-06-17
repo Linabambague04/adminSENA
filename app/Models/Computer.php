@@ -9,13 +9,13 @@ class Computer extends Model
 {
     protected $fillable = ['name'];
     protected $allowIncluded = [
-        'apprentice', 
-        'apprentice.course', 
-        'apprentice.course.training_center', 
-        'apprentice.course.training_center.teachers',
-        'apprentice.course.teacher',
+        'apprentice',
+        'apprentice.course',
+        'apprentice.course.area',
         'apprentice.course.area.teachers',
-        'apprentice.course.area'
+        'apprentice.course.teachers',
+        'apprentice.course.trainingCenter',
+        'apprentice.course.trainingCenter.teachers'
     ];
 
     protected $allowFilter = [

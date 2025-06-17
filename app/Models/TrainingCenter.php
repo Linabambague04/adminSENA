@@ -9,14 +9,15 @@ class TrainingCenter extends Model
 {
     protected $fillable = ['name'];
     protected $allowIncluded = [
-        'area', 
-        'course.area.teachers', 
-        'courses.apprentices.computer', 
-        'courses.apprentices',
+        'courses',
         'courses.area',
-        'teachers',
-        'courses'
+        'courses.area.teachers',
+        'courses.apprentices',
+        'courses.apprentices.computer',
+        'courses.teachers',
+        'teachers'
     ];
+
 
     protected $allowFilter = [
         'id', 

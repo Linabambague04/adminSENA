@@ -9,14 +9,15 @@ class Teacher extends Model
 {
     protected $fillable = ['name'];
     protected $allowIncluded = [
-        'area', 
-        'area.courses', 
-        'area.courses.apprentices', 
+        'area',
+        'area.courses',
+        'area.courses.apprentices',
         'area.courses.apprentices.computer',
-        'traning_centers',
-        'traning_centers.courses',
-        'course'
+        'area.courses.teachers',
+        'trainingCenter',
+        'trainingCenter.courses'
     ];
+
 
     protected $allowFilter = [
         'id', 

@@ -9,14 +9,15 @@ class Area extends Model
 {
     protected $fillable = ['name'];
     protected $allowIncluded = [
-        'courses', 
-        'teachers', 
-        'courses.apprentices', 
-        'courses.apprentices.computers',
-        'course.training_centers',
-        'course.training_centers.teachers',
-        'course.teacher'
+        'courses',
+        'teachers',
+        'courses.apprentices',
+        'courses.apprentices.computer',
+        'courses.trainingCenter',
+        'courses.trainingCenter.teachers',
+        'courses.teachers'
     ];
+
     protected $allowFilter = ['id','name'];
 
     public function teachers()
